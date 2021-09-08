@@ -351,6 +351,20 @@ nav {
 	color: #DFDDDF;
 }
 
+.button-cv {
+	background-color: #404040;
+	border: solid 2px #DFDDDF;
+	border-radius: 10px;
+	color: #DFDDDF;
+	padding: 10px 110px;
+}
+
+.button-cv:hover {
+	background-color: #DFDDDF;
+	color: #404040;
+	transition: 0.5s all;
+}
+
 form {
 	align-items: center;
 	display: flex;
