@@ -71,7 +71,7 @@ works_link.addEventListener('click', () => {
 
 contact_link.addEventListener('click', () => {
 	window.scrollTo({
-		top: contact_rect,
+		top: home_rect.height + about_rect.height + skills_rect.height + works_rect,
 		behavior: "smooth"
 	});
 });
