@@ -57,21 +57,21 @@ about_link.addEventListener('click', () => {
 
 skills_link.addEventListener('click', () => {
 	window.scrollTo({
-		top: (home_rect.height) + (about_rect.height),
+		top: home_rect.height + about_rect.height,
 		behavior: "smooth"
 	});
 });
 
 works_link.addEventListener('click', () => {
 	window.scrollTo({
-		top: (home_rect.height - 62) + (about_rect.height - 85) + (skills_rect.height - 90),
+		top: home_rect.height + about_rect.height + skills_rect.height,
 		behavior: "smooth"
 	});
 });
 
 contact_link.addEventListener('click', () => {
 	window.scrollTo({
-		top: (home_rect.height - 62) + (about_rect.height - 85) + (skills_rect.height - 90) + works_rect.height,
+		top: home_rect.height + about_rect.height + skills_rect.height + works_rect.height,
 		behavior: "smooth"
 	});
 });
