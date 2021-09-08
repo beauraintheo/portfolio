@@ -57,7 +57,7 @@ about_link.addEventListener('click', () => {
 
 skills_link.addEventListener('click', () => {
 	window.scrollTo({
-		top: home_rect.height + about_rect.height,
+		top: home_rect.height + about_rect.height - 65,
 		behavior: "smooth"
 	});
 });
