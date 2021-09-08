@@ -1,0 +1,417 @@
+/* ----- BODY -----
+   ---------------- */
+
+body {
+	background-color: #DFDDDF !important;
+	text-align: center !important;
+}
+
+
+/* ----- NAV -----
+   --------------- */
+
+nav {
+	background-color: #363636;
+	display: block;
+	height: 90px;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+/* ----- Logo ----- */
+
+.logo {
+	float: left;
+	font-family: "Akaya Kanadaka", cursive;
+	font-size: 32px;
+	padding: 15px 100px;
+}
+
+.logo a {
+	color: #DFDDDF;
+	padding: 10px 20px;
+}
+
+.logo a:hover {
+	color: #DFDDDF;
+	text-decoration: none;
+}
+
+/* ----- Nav-links ----- */
+
+.nav-links {
+	float: right;
+	font-size: 16px;
+	list-style-type: none;
+}
+
+.nav-links li {
+	margin: 28px;
+}
+
+.nav-links li a {
+	color: #DFDDDF;
+	font-family: "PT Sans";
+	letter-spacing: 1px;
+	margin: 0px 50px;
+	text-decoration: none;
+}
+
+.nav-underline {
+	position: relative;
+}
+
+.nav-underline:after {
+	content: "";
+	height: 2px;
+	margin-top: 25px;
+	position: absolute;
+	right: 0;
+	transition: width .4s ease;
+	width: 0;
+}
+
+.nav-underline:hover:after {
+	left: 0;
+	width: 100%;
+}
+
+
+/* ----- HOME ----- 
+   ---------------- */
+
+.home {
+	align-items: center;
+	color: #DFDDDF;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+
+/* ----- Background ----- */
+
+.home-background {
+	background-attachment: fixed;
+	background-image: url("../img/background_header.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	opacity: 0.7;
+	position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+/* ----- Title ----- */
+
+.home-title {
+	background-color: #363636;
+	border: solid 5px #DFDDDF;
+	border-radius: 40px;
+	box-shadow: 10px 15px #363636, -10px 15px #363636;
+	margin: auto;
+	padding: 30px 100px;
+	position: absolute;
+	top: 35%;
+}
+
+.home-title h1 {
+	font-family: "Akaya Kanadaka", cursive;
+}
+
+.home-title h2 {
+	font-family: "PT Sans";
+}
+
+.home-button {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.button-scroll {
+	background-color: red;
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	top: 80%;
+}
+
+.button-scroll i {
+	animation: arrow 2s ease-in-out infinite;
+	color: white;
+	height: 50px;
+	margin: auto;
+}
+
+/* ----- ABOUT -----
+   ----------------- */
+
+.about {
+	font-family: "PT Sans";
+	padding: 30px 0px 100px 0px;
+}
+
+/* ----- Presentation ----- */
+
+.about-photo {
+	border-radius: 20px;
+}
+
+.about-presentation {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.about-presentation-left {
+	display: inline-block;
+	width: 20%;
+}
+
+.about-presentation-left img {
+	width: 300px;
+}
+
+.about-presentation-right {
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 5%;
+	text-align: justify;
+	width: 35%;
+}
+
+
+/* ----- SKILLS ----- 
+   ------------------ */
+
+.skills {
+	background-color: #404040;
+	font-family: "PT Sans";
+	padding: 30px 0px 100px 0px;
+}
+
+.skills h1 {
+	color: #DFDDDF;
+}
+
+.skills-all {
+	background-color: #DFDDDF;
+	margin: 0px 5%;
+	padding: 20px 50px;
+	text-align: left;
+	width: 90%;
+}
+
+/* ----- Icon ----- */
+
+.icons {
+	margin: 30px 50px;
+	text-align: left;
+	width: 95%;
+}
+
+.icon {
+	display: inline-block;
+	margin-right: 6%;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 155px;
+}
+
+.last-icon {
+	margin: 0 !important;
+}
+
+.last-line-icon {
+	margin-bottom: 0 !important;
+}
+
+.icon {
+	transition: 0.5s ease-in-out;
+}
+
+.icon:hover {
+	transform: scale(1.1);
+}
+
+.icon img {
+	display: block;
+	margin: auto;
+	max-height: 90px;
+}
+
+.icon label {
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+
+/* ----- WORKS ----- 
+   ----------------- */
+
+.works {
+	font-family: "PT Sans";
+	padding: 30px 0px 100px 0px;
+}
+
+.works-projects {
+	width: 95%;
+}
+
+.works-project {
+	display: inline-block;
+	margin-left: 7%;
+	width: 25%;
+}
+
+.logo-project {
+	width: 100%;
+}
+
+.projects-logo {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nawak-battle {
+	background-image: url("../img/logo_nawak_battle.png");	
+}
+
+.nawak-story {
+	background-image: url("../img/logo_nawak_story.png");
+}
+
+.meteo-app {
+	background-image: url("../img/logo_meteo_app.png");
+}
+
+.archae {
+	background-image: url("../img/logo_archae.png");
+}
+
+.opacity {
+	opacity: 0;
+	padding: 20px 20px;
+}
+
+.opacity:hover {
+	background-color: #363636;
+	color: white;
+	opacity: 1;
+}
+
+.works-project h2 {
+	color: #DAA520;
+}
+
+/* ----- FOOTER -----
+   ------------------ */
+
+footer {
+	background-color: #363636;
+	color: #DFDDDF;
+	display: block;
+	font-family: "PT Sans";
+	font-size: 18px;
+	padding: 30px 0px;
+	text-align: center;
+}
+
+footer label {
+	border-bottom: solid 1px #DFDDDF;
+	border-top: solid 1px #DFDDDF;
+	padding: 20px 50px;
+}
+
+
+/* ----- GENERAL CLASSES -----
+   --------------------------- */
+
+/* ----- Title bar ----- */
+
+.title {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.title-label {
+	position: relative;
+}
+
+.title-label:after {
+	content: "";
+	display: block;
+	height: 5px;
+	margin-top: 5px;
+	position: absolute;
+}
+
+.label-about:after {
+	background-color: #363636;
+	width: 215px;
+}
+
+.label-skills:after {
+	background-color: #DFDDDF;
+	width: 228px;
+}
+
+.label-works:after {
+	background-color: #363636;
+	width: 208px;
+}
+
+/* ----- Active link in nav ----- */
+
+.active {
+	color: #DAA520;
+	transition: all 0.5s linear;
+}
+
+.active:after {
+	color: #DAA520;
+}
+
+.active:hover:after {
+	background-color: #DAA520;
+}
+
+/* ----- Inactive link in nav ----- */
+
+.inactive {
+	color: #DFDDDF;
+	transition: all 0.5s linear;
+}
+
+.inactive:after {
+	color: #DFDDDF;
+}
+
+.inactive:hover:after {
+	background-color: #DFDDDF;
+}
+
+/* ----- Important text areas ----- */
+
+.important {
+	color: #3c3cd6;
+}
+
+
+/* ----- KEYFRAMES -----
+   --------------------- */
+
+@keyframes arrow {
+	0%, 100% {
+		transform: translate(0, 0);
+	}
+
+	50% {
+		transform: translate(0, 20px);
+	}
+}
