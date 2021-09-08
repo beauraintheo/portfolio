@@ -9,27 +9,27 @@ const contact_link = document.querySelector('.contact-link');
 // Get size of home part
 const home = document.querySelector('.home');
 var home_rect = home.getBoundingClientRect();
-console.log(home_rect);
+console.log(home_rect.height);
 
 // Get size of about part
 const about = document.querySelector('.about');
 var about_rect = about.getBoundingClientRect();
-console.log(about_rect);
+console.log(about_rect.height);
 
 // Get size of skills part
 const skills = document.querySelector('.skills');
 var skills_rect = skills.getBoundingClientRect();
-console.log(skills_rect);
+console.log(skills_rect.height);
 
 // Get size of works part
 const works = document.querySelector('.works');
 var works_rect = works.getBoundingClientRect();
-console.log(works_rect);
+console.log(works_rect.height);
 
 // Get size of contact part
 const contact = document.querySelector('.contact');
 var contact_rect = works.getBoundingClientRect();
-console.log(contact_rect);
+console.log(contact_rect.height);
 
 
 // Scrolling action when click on an element
