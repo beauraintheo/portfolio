@@ -86,7 +86,7 @@ jQuery(function() {
 			$('.nav-underline').removeClass('active');
 			$('.nav-underline').addClass('inactive');
 
-			//console.log(scrollTop);
+			console.log(scrollTop);
 
 			if (scrollTop < 825) {
 				$('.logo-span').addClass('active');
