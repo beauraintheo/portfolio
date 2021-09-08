@@ -9,27 +9,27 @@ const contact_link = document.querySelector('.contact-link');
 // Get size of home part
 const home = document.querySelector('.home');
 var home_rect = home.getBoundingClientRect();
-console.log(home_rect.height);
+console.log(home_rect);
 
 // Get size of about part
 const about = document.querySelector('.about');
 var about_rect = about.getBoundingClientRect();
-console.log(about_rect.height);
+console.log(about_rect);
 
 // Get size of skills part
 const skills = document.querySelector('.skills');
 var skills_rect = skills.getBoundingClientRect();
-console.log(skills_rect.height);
+console.log(skills_rect);
 
 // Get size of works part
 const works = document.querySelector('.works');
 var works_rect = works.getBoundingClientRect();
-console.log(works_rect.height);
+console.log(works_rect);
 
 // Get size of contact part
 const contact = document.querySelector('.contact');
 var contact_rect = works.getBoundingClientRect();
-console.log(contact_rect.height);
+console.log(contact_rect);
 
 
 // Scrolling action when click on an element
@@ -55,12 +55,9 @@ about_link.addEventListener('click', () => {
 	});
 });
 
-console.log(home_rect.height - 62 + about_rect.height - 56);
-console.log(home_rect.height - 62 + about_rect.height + 56);
-
 skills_link.addEventListener('click', () => {
 	window.scrollTo({
-		top: (home_rect.height - 62 + about_rect.height - 56),
+		top: home_rect.height + about_rect.height,
 		behavior: "smooth"
 	});
 });
@@ -74,7 +71,7 @@ works_link.addEventListener('click', () => {
 
 contact_link.addEventListener('click', () => {
 	window.scrollTo({
-		top: home_rect.height + about_rect.height + skills_rect.height + works_rect.height,
+		top: home_rect.height + about_rect.height + skills_rect.height + works_rect.height + contact_rect,
 		behavior: "smooth"
 	});
 });
@@ -89,7 +86,7 @@ jQuery(function() {
 			$('.nav-underline').removeClass('active');
 			$('.nav-underline').addClass('inactive');
 
-			console.log(scrollTop);
+			//console.log(scrollTop);
 
 			if (scrollTop < 825) {
 				$('.logo-span').addClass('active');
