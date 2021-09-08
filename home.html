@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		
+
 		<!-- Import files -->
 		<link rel="stylesheet" type="text/css" href="css/home.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -31,9 +31,13 @@
 					<a class="about-link" href="javascript:void(0)"><span class="nav-underline link-1">PRÉSENTATION</span></a>
 					<a class="skills-link" href="javascript:void(0)"><span class="nav-underline link-2">COMPÉTENCES</span></a>
 					<a class="works-link" href="javascript:void(0)"><span class="nav-underline link-3">RÉALISATIONS</span></a>
-					<a href="javascript:void(0)"><span class="nav-underline">CONTACT</span></a>
+					<a class="contact-link" href="javascript:void(0)"><span class="nav-underline link-4">CONTACT</span></a>
 				</li>
 			</ul>
+
+			<div class="burger">
+				<i class="fa fa-bars fa-3x"></i>
+			</div>
 		</nav>
 
 		<!-- Picture -->
@@ -256,6 +260,35 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="contact">
+			<h1 class="title"><label class="title-label label-contact">Contact</label></h1>
+			<label>Vous pouvez me contacter via le formulaire ci-dessous ou par email</label>
+
+			<p>
+				<b>Mon email : </b>
+				<a href="mailto:tho.beaurain@gmail.com" class="underline">tho.beaurain@gmail.com</a>
+			</p>
+
+			<form method="POST" name="contact" data-netlify="true">
+				<p class="fields">
+					<label for="name" class="label-field">Nom</label><br>
+					<input type="text" id="name" class="field" />
+				</p>
+
+				<p class="fields">
+					<label for="mail" class="label-field">Adresse e-mail</label><br>
+					<input type="text" id="mail" class="field" />
+				</p>
+
+				<p class="fields">
+					<label for="message" class="label-field">Message</label><br>
+					<textarea id="message" class="field textarea"></textarea>
+				</p>
+
+				<button type="submit" class="fields button-field">Envoyer</button>
+			</form>
 		</div>
 
 		<!-- Copyright Informations -->

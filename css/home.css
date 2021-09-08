@@ -77,8 +77,29 @@ nav {
 	width: 100%;
 }
 
+.burger {
+	color: white;
+	display: none;
+	float: right;
+}
 
-/* ----- HOME ----- 
+@media (max-width: 1370px) {
+	.nav-links {
+		display: none;
+		float: right;
+		font-size: 16px;
+		list-style-type: none;
+	}
+
+	.burger {
+		color: white;
+		display: flex;
+		float: right;
+		margin: 20px 10px;
+	}
+}
+
+/* ----- HOME -----
    ---------------- */
 
 .home {
@@ -185,7 +206,7 @@ nav {
 }
 
 
-/* ----- SKILLS ----- 
+/* ----- SKILLS -----
    ------------------ */
 
 .skills {
@@ -250,7 +271,7 @@ nav {
 }
 
 
-/* ----- WORKS ----- 
+/* ----- WORKS -----
    ----------------- */
 
 .works {
@@ -279,7 +300,7 @@ nav {
 }
 
 .nawak-battle {
-	background-image: url("../img/logo_nawak_battle.png");	
+	background-image: url("../img/logo_nawak_battle.png");
 }
 
 .nawak-story {
@@ -303,11 +324,82 @@ nav {
 	background-color: #363636;
 	color: white;
 	opacity: 1;
+	transition: 0.5s all;
 }
 
 .works-project h2 {
 	color: #DAA520;
 }
+
+
+/* ----- CONTACT -----
+   ------------------- */
+
+.contact {
+	background-color: #404040;
+	color: white;
+	padding-bottom: 72px;
+	padding-top: 50px;
+}
+
+.underline {
+	color: #DFDDDF;
+	text-decoration: underline;
+}
+
+.underline:hover {
+	color: #DFDDDF;
+}
+
+form {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+}
+
+.fields {
+	width: 40%;
+}
+
+.label-field {
+	text-align: left;
+}
+
+.field {
+	background-color: #404040;
+	border: solid 2px #DFDDDF;
+	border-radius: 10px;
+	color: white;
+	padding: 10px 10px;
+	width: 100%;
+}
+
+.field:focus {
+	border: 2px solid #DAA520;
+	outline: none !important;
+}
+
+.textarea {
+	color: white;
+	height: 150px;
+}
+
+.textarea:focus {
+	border: 2px solid #DAA520;
+	outline: none !important;
+}
+
+.button-field {
+	background-color: #404040;
+	border: solid 2px #DFDDDF;
+	border-radius: 10px;
+	color: white;
+	height: 50px;
+	margin-top: 20px;
+}
+
 
 /* ----- FOOTER -----
    ------------------ */
@@ -364,6 +456,11 @@ footer label {
 .label-works:after {
 	background-color: #363636;
 	width: 208px;
+}
+
+.label-contact:after {
+	background-color: #DFDDDF;
+	width: 143px;
 }
 
 /* ----- Active link in nav ----- */
